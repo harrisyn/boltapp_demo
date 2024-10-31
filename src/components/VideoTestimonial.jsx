@@ -7,7 +7,7 @@ function VideoTestimonial({ title, videoUrl, thumbnail }) {
           alt={title}
           className="w-full h-full object-cover"
         />
-        <button className="absolute inset-0 flex items-center justify-center">
+        <button className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 hover:bg-opacity-40 transition-opacity">
           <svg
             className="w-16 h-16 text-white opacity-80 hover:opacity-100 transition-opacity"
             fill="currentColor"
@@ -19,6 +19,7 @@ function VideoTestimonial({ title, videoUrl, thumbnail }) {
       </div>
       <div className="p-4">
         <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
+        <p className="mt-1 text-sm text-gray-500">Click to watch the video</p>
       </div>
     </div>
   );

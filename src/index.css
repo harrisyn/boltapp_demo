@@ -8,8 +8,49 @@
   font-weight: 400;
 }
 
-body {
+body, html {
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
   min-width: 320px;
   min-height: 100vh;
+}
+
+.container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* Adjust the gap as needed */
+}
+
+.navbar .logo {
+  margin-right: auto;
+}
+
+.navbar .donate-button {
+  margin-left: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.element {
+  max-width: 100%;
+  overflow-x: hidden;
 }

@@ -4,21 +4,21 @@ import { ArrowRightIcon } from '@heroicons/react/24/outline';
 const programs = [
   {
     id: 1,
-    title: 'Community Health Outreach',
-    description: 'Bringing essential healthcare services to underserved communities.',
-    image: '/images/community-health.jpg',
+    title: 'Access to Care',
+    description: 'Bridging the quality divide within the healthcare system by delivering quality healthcare to vulnerable groups in Ghana.',
+    image: 'https://nyahomedical.com/wp-content/uploads/2023/03/Nyaho-Dove-Foundation-scaled.jpg',
   },
   {
     id: 2,
-    title: 'Medical Education',
-    description: 'Training the next generation of healthcare professionals.',
-    image: '/images/medical-education.jpg',
+    title: 'Postgraduate Training',
+    description: 'Building the capacity of healthcare professionals and increasing the number of family physicians in Ghana.',
+    image: 'https://nyahomedical.com/wp-content/uploads/2023/03/Nyaho-Medical-Centre-Doctors.jpg',
   },
   {
     id: 3,
-    title: 'Preventive Care',
-    description: 'Promoting health through prevention and early detection.',
-    image: '/images/preventive-care.jpg',
+    title: 'Research & Development',
+    description: 'Contributing data through research and development to improve healthcare outcomes in Africa.',
+    image: 'https://nyahomedical.com/wp-content/uploads/2023/03/Nyaho-Medical-Centre-Lab.jpg',
   },
 ];
 
@@ -27,12 +27,11 @@ function FeaturedPrograms() {
     <section className="py-12 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-gray-900">Featured Programs</h2>
+          <h2 className="text-3xl font-bold text-gray-900">Our Pillars</h2>
           <p className="mt-4 text-xl text-gray-600">
-            Discover how we're making healthcare accessible to all
+            Discover how we're improving healthcare access and quality in Ghana
           </p>
         </div>
-
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {programs.map((program) => (
             <div

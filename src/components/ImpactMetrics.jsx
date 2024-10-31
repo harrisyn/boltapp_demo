@@ -1,15 +1,15 @@
 function ImpactMetrics() {
   const metrics = [
-    { id: 1, name: 'MEDICAL PROFESSIONALS TRAINED', value: '2,500+' },
-    { id: 2, name: 'TRAINING FACILITIES', value: '12' },
-    { id: 3, name: 'COMMUNITIES IMPACTED', value: '150+' }
+    { id: 1, name: 'BREAST CANCER SCREENINGS', value: '1000+' },
+    { id: 2, name: 'CHILD WELFARE CLINICS', value: '12' },
+    { id: 3, name: 'TRAINED PHYSICIANS', value: '50+' }
   ];
 
   return (
     <div className="bg-primary-700 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-center text-primary-100 text-sm font-medium uppercase tracking-wider mb-12">
-          Nyaho Dove Foundation's Impact
+          Our Impact
         </h2>
         <div className="grid md:grid-cols-3 gap-12 text-center">
           {metrics.map((metric) => (

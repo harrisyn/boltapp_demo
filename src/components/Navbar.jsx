@@ -18,28 +18,27 @@ function Navbar() {
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between h-16">
-              <div className="flex">
-                <Link to="/" className="flex-shrink-0 flex items-center">
-                  <img
-                    className="h-8 w-auto"
-                    src="/logo.svg"
-                    alt="Nyaho Dove Foundation"
-                  />
-                </Link>
-                <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-                  {navigation.map((item) => (
-                    <Link
-                      key={item.name}
-                      to={item.href}
-                      className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 hover:text-blue-600"
-                    >
-                      {item.name}
-                    </Link>
-                  ))}
-                </div>
+            <div className="flex justify-between h-16 items-center">
+              <Link to="/" className="flex-shrink-0 flex items-center">
+                <img
+                  className="h-8 w-auto"
+                  src="/logo.svg"
+                  alt="Nyaho Dove Foundation"
+                />
+                <span className="ml-2 text-xl font-bold text-gray-900">Nyaho Dove Foundation</span>
+              </Link>
+              <div className="hidden sm:flex sm:space-x-8">
+                {navigation.map((item) => (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 hover:text-blue-600"
+                  >
+                    {item.name}
+                  </Link>
+                ))}
               </div>
-              <div className="hidden sm:ml-6 sm:flex sm:items-center">
+              <div className="hidden sm:flex sm:items-center">
                 <Link
                   to="/donate"
                   className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
@@ -59,7 +58,6 @@ function Navbar() {
               </div>
             </div>
           </div>
-
           <Disclosure.Panel className="sm:hidden">
             <div className="pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
